@@ -6,6 +6,22 @@ function Review() {
     const [index, setIndex] = useState(0);
     const { name, job, image, text } = people[index];
 
+    function handlePrev() {
+        if (index === 0) {
+            setIndex(people.length - 1);
+        } else {
+            setIndex(index - 1);
+        }
+    }
+
+    function handleNext() {
+        if (index === people.length - 1) {
+            setIndex(0);
+        } else {
+            setIndex(index + 1);
+        }
+    }
+
     return (
         <article className="review">
             <div className="img-container">
@@ -18,10 +34,10 @@ function Review() {
             <p className="job">{job}</p>
             <p className="info">{text}</p>
             <div className="button-container">
-                <button className="prev-btn">
+                <button onClick={handlePrev} className="prev-btn">
                     <FaChevronLeft />
                 </button>
-                <button className="next-btn">
+                <button onClick={handleNext} className="next-btn">
                     <FaChevronRight />
                 </button>
             </div>
