@@ -22,6 +22,11 @@ function Review() {
         }
     }
 
+    function handleRandom() {
+        const randIndex = Math.floor(Math.random() * people.length);
+        setIndex(randIndex);
+    }
+
     return (
         <article className="review">
             <div className="img-container">
@@ -34,14 +39,14 @@ function Review() {
             <p className="job">{job}</p>
             <p className="info">{text}</p>
             <div className="button-container">
-                <button onClick={handlePrev} className="prev-btn">
+                <button className="prev-btn" onClick={handlePrev}>
                     <FaChevronLeft />
                 </button>
-                <button onClick={handleNext} className="next-btn">
+                <button className="next-btn" onClick={handleNext}>
                     <FaChevronRight />
                 </button>
             </div>
-            <button className="random-btn">surprise me</button>
+            <button className="random-btn" onClick={handleRandom}>surprise me</button>
         </article>
     )
 }
