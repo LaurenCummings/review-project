@@ -45,9 +45,10 @@
 .job {
     text-transform: uppercase;
     color: rgb(49, 130, 196);
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 2px;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .info {
