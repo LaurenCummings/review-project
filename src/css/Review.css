@@ -56,6 +56,22 @@
     margin-top: 5px;
 }
 
+.prev-btn, .next-btn {
+    border: none;
+    border-radius: 3px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+    margin: 3px auto;
+    color: rgb(49, 130, 196);
+    cursor: pointer;
+}
+
+.prev-btn:focus, .next-btn:focus {
+    border: 1px solid black;
+}
+
 .random-btn {
     color: rgb(49, 130, 196);
     background-color: rgb(208, 227, 243);
@@ -64,6 +80,7 @@
     padding: 4px;
     font-size: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .random-btn:focus {
