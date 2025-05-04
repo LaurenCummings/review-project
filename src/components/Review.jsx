@@ -51,7 +51,7 @@ function Review() {
                     <FaChevronRight />
                 </button>
             </div>
-            <button className="random-btn" onClick={handleRandom}>surprise me</button>
+            <button className="random-btn" onClick={handleRandom}>Surprise Me</button>
         </article>
     )
 }

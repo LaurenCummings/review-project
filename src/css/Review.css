@@ -55,3 +55,13 @@
     font-size: 12px;
     margin-top: 5px;
 }
+
+.random-btn {
+    color: rgb(49, 130, 196);
+    background-color: rgb(208, 227, 243);
+    border: 1px solid rgb(212, 209, 209);
+    border-radius: 2px;
+    padding: 4px;
+    font-size: 10px;
+    font-weight: bold;
+}
