@@ -25,3 +25,11 @@
     top: 10px;
     left: 8px;
 }
+
+.author {
+    text-transform: capitalize;
+}
+
+.job {
+    text-transform: uppercase;
+}
