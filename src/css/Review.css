@@ -38,14 +38,19 @@
 
 .author {
     text-transform: capitalize;
+    margin-top: 5px;
+    margin-bottom: 2px;
 }
 
 .job {
     text-transform: uppercase;
     color: rgb(49, 130, 196);
     font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 5px;
 }
 
 .info {
     font-size: 12px;
+    margin-top: 5px;
 }
