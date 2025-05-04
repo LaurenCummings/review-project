@@ -42,4 +42,10 @@
 
 .job {
     text-transform: uppercase;
+    color: rgb(49, 130, 196);
+    font-size: 12px;
+}
+
+.info {
+    font-size: 12px;
 }
