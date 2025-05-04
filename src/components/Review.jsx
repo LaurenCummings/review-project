@@ -24,7 +24,11 @@ function Review() {
 
     function handleRandom() {
         const randIndex = Math.floor(Math.random() * people.length);
-        setIndex(randIndex);
+        if (randIndex === index) {
+            handleRandom();
+        } else {
+            setIndex(randIndex); 
+        }
     }
 
     return (
